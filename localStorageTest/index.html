@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <style>
+      body {
+        background: rgb(187, 255, 229);
+      }
+      input {
+        padding: 0 10px;
+        height: 40px;
+      }
+      button {
+        padding: 0 10px;
+        height: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+    <fieldset>
+      <legend>Insert Data</legend>
+      <input type="text" placeholder="Enter Key..." id="inpKey" />
+      <input type="text" placeholder="Enter Value..." id="inpValue" />
+      <button id="btn-insert">Insert Data</button>
+    </fieldset>
+    <fieldset>
+      <legend>Local Storage</legend>
+      <div class="output"></div>
+    </fieldset>
+
+    <script>
+      console.log("AB9");
+      const inpKey = document.getElementById("inpKey");
+      const inpValue = document.getElementById("inpValue");
+      const insertBtn = document.getElementById("btn-insert");
+      const displayLocalStorage = document.getElementById("output");
+
+      insertBtn.addEventListener("click", (e) => {
+        console.log(inpKey.value + ": " + inpValue.value);
+        console.log(localStorage);
+        localStorage.setItem(inpKey.value, inpValue.value);
+        displayLocalStorage.textContent = localStorage.getItem(name);
+      });
+    </script>
+  </body>
+</html>
+1
