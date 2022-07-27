@@ -71,3 +71,17 @@ String.prototype.toAlternatingCase = function () {
 console.log("HeLLo WoRLD".toAlternatingCase());
 
 //////
+
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+// If EVEN return the 2 middle characters
+// If ODD return THE middle characters
+
+function getMiddle(s) {
+  //Code goes here!
+  const isOdd = s.length % 2 === 0 ? "even" : "odd";
+  const middle = s.length / 2;
+  return isOdd === "even" ? s[middle - 1] + s[middle] : s[Math.floor(middle)];
+}
+
+console.log(getMiddle("test"));
