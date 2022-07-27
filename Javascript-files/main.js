@@ -1,4 +1,4 @@
-console.log("AB9");
+console.log("main.js");
 // find the square root of each number and then add them all together
 
 function squareSum(numbers) {
