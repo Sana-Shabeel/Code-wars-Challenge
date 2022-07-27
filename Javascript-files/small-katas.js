@@ -85,3 +85,25 @@ function getMiddle(s) {
 }
 
 console.log(getMiddle("test"));
+
+////////////////////////////////
+
+// Sum of two lowest positive integers
+
+// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+function sumTwoSmallestNumbers(nums) {
+  // My solution
+  let firstMinRemoved = nums.filter((n) => n !== Math.min(...nums));
+
+  Math.min(...firstMinRemoved) + Math.min(...nums);
+
+  // from kata solutions
+  nums = nums.sort(function (a, b) {
+    return a - b;
+  });
+
+  return nums[0] + nums[1];
+}
+
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
