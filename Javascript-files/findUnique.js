@@ -19,3 +19,4 @@ function findUniq(arr) {
   // return the number the appears the least times
   return count1 < count2 ? uniqs[0] : uniqs[1];
 }
+console.log(findUniq([3, 3, 3, 4]));
