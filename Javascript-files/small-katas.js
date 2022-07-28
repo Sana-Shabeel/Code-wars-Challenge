@@ -107,3 +107,10 @@ function sumTwoSmallestNumbers(nums) {
 }
 
 console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
+
+////////////////////////////////
+
+var isPalindrome = function (x) {
+  return parseInt(x.toString().split("").reverse().join("")) === x;
+};
+console.log(isPalindrome(-121));
