@@ -132,3 +132,15 @@ function arithmetic(a, b, operator) {
   return optr[operator];
 }
 console.log(arithmetic(1, 2, "add"));
+
+////////////////////////////////
+
+// RANGE IN JAVASCRIPT
+
+//Build a function that returns an array of integers from n to 1 where n>0.
+
+const reverseSeq = (n) => {
+  return [...Array(n + 1).keys()].reverse().slice(0, -1);
+};
+
+console.log(reverseSeq(5));
