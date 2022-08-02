@@ -39,4 +39,4 @@ function correct(string) {
     })
     .join("");
 }
-console.log(correct("0n15"));
+console.log(correct("0N15"));
