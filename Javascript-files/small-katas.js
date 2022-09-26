@@ -144,3 +144,22 @@ const reverseSeq = (n) => {
 };
 
 console.log(reverseSeq(5));
+
+/* 
+
+NUMBERED ALPHABET
+
+
+example 
+["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+
+
+*/
+var numberedAbc = function (array) {
+  //your awesome code here
+  if (array.length === 0) return [];
+
+  return array.map((c, i) => `${i + 1}: ${c}`);
+};
+
+console.log(numberedAbc(["a", "b", "c"]));
