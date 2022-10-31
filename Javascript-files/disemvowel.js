@@ -23,3 +23,9 @@ function disemvowel(str) {
   return [...str].filter((v) => !vowels.includes(v.toLowerCase())).join("");
 }
 console.log(disemvowel("This website is for losers LOL!"));
+
+// alternative method using replace
+
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
