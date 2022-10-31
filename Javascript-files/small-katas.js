@@ -145,6 +145,8 @@ const reverseSeq = (n) => {
 
 console.log(reverseSeq(5));
 
+////////////////////////////////
+
 /* 
 
 NUMBERED ALPHABET
@@ -163,3 +165,13 @@ var numberedAbc = function (array) {
 };
 
 console.log(numberedAbc(["a", "b", "c"]));
+
+/////$/////////////////////////////////////////
+function squareDigits(num) {
+  const nums = [...num.toString()]
+    .map((n) => (n === "1" ? n * 1 : n * n))
+    .join("");
+  return parseInt(nums);
+}
+
+console.log(squareDigits(3212));
