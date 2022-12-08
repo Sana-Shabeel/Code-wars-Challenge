@@ -3,7 +3,10 @@ function wave(str) {
   // fill the slots with str
   const arrStr = Array(str.length).fill(str);
 
-  return;
+  // replace the letters with capitilized one
+  return arrStr.map((x, i) => x.replace(x[i], x[i].toUpperCase()));
 }
 
-console.log(wave("hello"));
+console.log(wave("anas"));
+
+// x[i].toUpperCase() + x.slice(0, str.length)
