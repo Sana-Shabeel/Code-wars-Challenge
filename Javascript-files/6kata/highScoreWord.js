@@ -60,3 +60,5 @@ function high(x) {
   console.log(getIndexOfMax);
   return arrayX[getIndexOfMax];
 }
+
+console.log(high("man i need a taxi up to ubud"));
