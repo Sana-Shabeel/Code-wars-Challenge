@@ -1,4 +1,5 @@
 /*
+Highest Scoring Word
 
 DESCRIPTION:
 Given a string of words, you need to find the highest scoring word.
