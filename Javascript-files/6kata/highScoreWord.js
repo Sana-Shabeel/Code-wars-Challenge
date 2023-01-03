@@ -63,3 +63,4 @@ function high(x) {
 
 console.log(high("man i need a taxi up to ubud"));
 console.log(high("aa b"));
+console.log(high("b aa"));
