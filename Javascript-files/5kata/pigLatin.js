@@ -30,3 +30,4 @@ function pigIt(str) {
 
   return newStr.trimEnd();
 }
+console.log(pigIt("Hello world !"));
