@@ -23,10 +23,12 @@ function deleteNth(arr, n) {
     return arr.reduce((a, b) => (el === b ? a + 1 : a + 0), 0);
   });
 
+  // lop through the unique values in set
   for (let i = 0; i < set.length; i++) {
     let Occur = countOccurence[i];
     const uniq = set[i];
 
+    // if the occurence of a num is greater than n then remove the lastIndex of that elements
     while (Occur > n) {
       arr.splice(arr.lastIndexOf(uniq), 1);
       Occur--;
