@@ -28,7 +28,7 @@ function deleteNth(arr, n) {
     let Occur = countOccurence[i];
     const uniq = set[i];
 
-    // if the occurence of a num is greater than n then remove the lastIndex of that elements
+    // if the occurence of a num is greater than n then remove the element at the lastIndex
     while (Occur > n) {
       arr.splice(arr.lastIndexOf(uniq), 1);
       Occur--;
