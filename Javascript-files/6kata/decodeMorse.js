@@ -20,3 +20,62 @@ The Morse code table is preloaded for you as a dictionary, feel free to use it:
 
 
 */
+
+const MORSE_CODE = {
+  ".-": "A",
+  "-…": "B",
+  "-.-.": "C",
+  "-..": "D",
+  ".": "E",
+  "..-.": "F",
+  "--.": "G",
+  "….": "H",
+  "..": "I",
+  ".---": "J",
+  "-.-": "K",
+  ".-..": "L",
+  "--": "M",
+  "-.": "N",
+  "---": "O",
+  ".--.": "P",
+  "--.-": "Q",
+  ".-.": "R",
+  "…": "S",
+  "-": "T",
+  "..-": "U",
+  "…-": "V",
+  ".--": "W",
+  "-..-": "X",
+  "-.--": "Y",
+  "--..": "Z",
+  "-----": "0",
+  ".----": "1",
+  "..---": "2",
+  "…--": "3",
+  "….-": "4",
+  "…..": "5",
+  "-….": "6",
+  "--…": "7",
+  "---..": "8",
+  "----.": "9",
+};
+
+const decodeMorse = function (morseCode) {
+  // Your code here
+  // You can use MORSE_CODE[morse]
+  let output = "";
+  const morseArray = morseCode.split(" ");
+
+  for (let i = 0; i < morseArray.length; i++) {
+    const morse = morseArray[i];
+
+    if (MORSE_CODE[morse] === undefined) {
+      output += " ";
+      continue;
+    }
+    output += MORSE_CODE[morse];
+  }
+  return output.split("   ").join("-");
+};
+
+console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
