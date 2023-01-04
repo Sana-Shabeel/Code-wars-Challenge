@@ -76,7 +76,8 @@ const decodeMorse = function (morseCode) {
     }
     output += MORSE_CODE[morse];
   }
-  return output.split("   ").join("-");
+  // replace the 3 spaces with 1
+  return output.replaceAll("  ", " ").trim();
 };
 
 console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
