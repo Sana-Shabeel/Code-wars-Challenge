@@ -11,9 +11,6 @@ pigIt('Hello world !');     // elloHay orldway !
 */
 
 function pigIt(str) {
-  //remove the first letter of EACH word and add 'ay' at the end
-  // Leave punctuation marks untouched.
-
   // split the string into an array of words
   const splitStr = str.split(" ");
 
