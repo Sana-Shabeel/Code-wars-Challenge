@@ -70,6 +70,7 @@ const decodeMorse = function (morseCode) {
     const morse = morseArray[i];
 
     if (MORSE_CODE[morse] === undefined) {
+      // if there is space it will return undefined
       output += " ";
       continue;
     }
