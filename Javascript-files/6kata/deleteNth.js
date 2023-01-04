@@ -1,6 +1,7 @@
 /*
+Delete occurrences of an element if it occurs more than n times
 
-
+Description
 
 Enough is enough!
 Alice and Bob were on a holiday. Both of them took many pictures of the places they've been, and now they want to show Charlie their entire collection. However, Charlie doesn't like these sessions, since the motif usually repeats. He isn't fond of seeing the Eiffel tower 40 times.
