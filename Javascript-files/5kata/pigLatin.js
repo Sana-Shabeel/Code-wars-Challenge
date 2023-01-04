@@ -22,8 +22,6 @@ function pigIt(str) {
     const newWord = word.slice(1) + word[0] + "ay ";
 
     if (punctuation.includes(word)) {
-      //
-      console.log(word[0]);
       newStr += word;
       continue;
     }
