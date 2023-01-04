@@ -36,3 +36,4 @@ function pigIt(str) {
   return newStr.trimEnd();
 }
 console.log(pigIt("Hello world !"));
+console.log(pigIt("Pig latin is cool"));
