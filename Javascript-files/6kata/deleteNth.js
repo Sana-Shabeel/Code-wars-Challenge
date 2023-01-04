@@ -26,12 +26,10 @@ function deleteNth(arr, n) {
   for (let i = 0; i < set.length; i++) {
     let Occur = countOccurence[i];
     const uniq = set[i];
-    // console.log(uniq);
 
     while (Occur > n) {
       arr.splice(arr.lastIndexOf(uniq), 1);
       Occur--;
-      console.log(Occur);
     }
   }
 
