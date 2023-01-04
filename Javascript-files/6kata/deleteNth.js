@@ -37,4 +37,5 @@ function deleteNth(arr, n) {
 
   return arr;
 }
+console.log(deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 3));
 console.log(deleteNth([1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1], 3));
