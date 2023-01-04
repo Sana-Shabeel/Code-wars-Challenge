@@ -32,3 +32,5 @@ function pigIt(str) {
 }
 console.log(pigIt("Hello world !"));
 console.log(pigIt("Pig latin is cool"));
+
+// Alternative solution using regex by
