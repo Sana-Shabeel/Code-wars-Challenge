@@ -15,8 +15,6 @@ Should return: 160 (the only even number)
 */
 
 function findOutlier(integers: number[]): number {
-  // filter out the even
-
   const even: number[] = integers.filter((n) => n % 2 === 0);
   const odd: number[] = integers.filter((n) => n % 2 !== 0);
 
