@@ -14,6 +14,7 @@ Examples
 ""                                        =>  false
 
 
+
 */
 
 function generateHashtag(str) {
